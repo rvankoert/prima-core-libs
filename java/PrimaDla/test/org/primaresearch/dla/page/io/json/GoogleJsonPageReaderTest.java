@@ -20,6 +20,7 @@ import static org.junit.Assert.*;
 import java.io.File;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.primaresearch.dla.page.Page;
 import org.primaresearch.dla.page.io.FileInput;
@@ -31,6 +32,7 @@ public class GoogleJsonPageReaderTest {
 
 	File reid2019json;
 
+	@Ignore
 	@Before
 	public void setUp() throws Exception {
 		reid2019json = new File("c:/junit/json/279_2_A_28_0002.json");
@@ -38,7 +40,8 @@ public class GoogleJsonPageReaderTest {
 			throw new Exception("Page JSON file not found: "+ reid2019json.getPath());
 
 	}
-	
+
+	@Ignore
 	@Test
 	public void testRead() {
 		GoogleJsonPageReader reader = new GoogleJsonPageReader();

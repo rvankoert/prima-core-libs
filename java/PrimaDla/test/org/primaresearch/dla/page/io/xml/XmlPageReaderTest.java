@@ -25,6 +25,7 @@ import static org.junit.Assert.fail;
 import java.io.File;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.primaresearch.dla.page.Page;
 import org.primaresearch.dla.page.io.FileInput;
@@ -106,6 +107,7 @@ public class XmlPageReaderTest {
 
 	@SuppressWarnings("unused")
 	@Test
+	@Ignore
 	public void testRead2019() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		
@@ -184,6 +186,7 @@ public class XmlPageReaderTest {
 	
 	@SuppressWarnings("unused")
 	@Test
+	@Ignore
 	public void testRead2018() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		
@@ -257,6 +260,7 @@ public class XmlPageReaderTest {
 
 	@SuppressWarnings("unused")
 	@Test
+	@Ignore
 	public void testRead2017() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		
@@ -330,6 +334,7 @@ public class XmlPageReaderTest {
 
 	@SuppressWarnings("unused")
 	@Test
+	@Ignore
 	public void testRead2016() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		
@@ -401,6 +406,7 @@ public class XmlPageReaderTest {
 	}
 
 	@Test
+	@Ignore
 	public void testReadLargeFile() {
 		
 		//This test method is just for performance measuring 
@@ -418,6 +424,7 @@ public class XmlPageReaderTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testReadSchema20130715File() {
 		
 		//This test method is just for performance measuring 
@@ -435,6 +442,7 @@ public class XmlPageReaderTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testReadingOrder() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		
@@ -467,6 +475,7 @@ public class XmlPageReaderTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testLayers() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		
@@ -498,6 +507,7 @@ public class XmlPageReaderTest {
 	
 	@SuppressWarnings("unused")
 	@Test
+	@Ignore
 	public void testValidate() {
 		
 		//try {
@@ -552,6 +562,7 @@ public class XmlPageReaderTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testValidateLargeFile() {
 		
 		//This test method is just for performance measuring 
@@ -574,6 +585,7 @@ public class XmlPageReaderTest {
 	}
 
 	@Test
+	@Ignore
 	public void testValidateWithModifiedSchema() {
 		//Try to open the modified page file using the normal schema 
 		//try {

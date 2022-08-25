@@ -21,6 +21,7 @@ import static org.junit.Assert.assertTrue;
 import java.io.File;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.primaresearch.dla.page.Page;
 import org.primaresearch.dla.page.io.FileInput;
@@ -43,6 +44,7 @@ public class SaxPageHandler_AbbyyFineReader10Test {
 	}
 	
 	@Test
+	@Ignore
 	public void testGetPageObject() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		

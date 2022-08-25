@@ -20,6 +20,7 @@ import static org.junit.Assert.*;
 import java.io.File;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.primaresearch.dla.page.Page;
 import org.primaresearch.dla.page.io.FileInput;
@@ -42,6 +43,7 @@ public class SaxPageHandler_AltoTest {
 	}
 
 	@Test
+	@Ignore
 	public void testAlto20() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		

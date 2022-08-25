@@ -20,6 +20,7 @@ import static org.junit.Assert.*;
 import java.io.File;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.primaresearch.dla.page.Page;
 import org.primaresearch.dla.page.io.FileInput;
@@ -40,6 +41,7 @@ public class SaxPageHandlerLegacyTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testGetPageObject() {
 		XmlPageReader reader = PageXmlInputOutput.getReader();
 		

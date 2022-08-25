@@ -24,6 +24,7 @@ import static org.junit.Assert.fail;
 import java.io.File;
 import java.util.List;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.primaresearch.dla.page.Page;
 import org.primaresearch.dla.page.io.xml.PageXmlInputOutput;
@@ -40,6 +41,7 @@ import org.primaresearch.shared.variable.Variable.WrongVariableTypeException;
 public class ConverterHubTest {
 
 	@Test
+	@Ignore
 	public void testConvert() {
 		
 		try {
