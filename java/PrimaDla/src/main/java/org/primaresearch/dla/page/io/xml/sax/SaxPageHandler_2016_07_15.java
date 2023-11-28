@@ -69,7 +69,7 @@ import org.xml.sax.SAXException;
  */
 public class SaxPageHandler_2016_07_15 extends SaxPageHandler {
 
-	private static DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+	private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 	
 	
 	private Page page = null;
@@ -704,7 +704,7 @@ public class SaxPageHandler_2016_07_15 extends SaxPageHandler {
 	 */
 	private Date parseDate(String str) {
 		try {
-			return DATE_FORMAT.parse(str);
+			return dateFormat.parse(str);
 		} catch (ParseException e) {
 			return new Date();
 		}
