@@ -68,7 +68,7 @@ import org.xml.sax.SAXException;
  */
 public class SaxPageHandler_2013_07_15 extends SaxPageHandler {
 
-	private static DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
+	private DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
 	
 	
 	private Page page = null;
