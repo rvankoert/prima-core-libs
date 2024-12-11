@@ -15,17 +15,12 @@
  */
 package org.primaresearch.io.xml;
 
+import org.primaresearch.io.UnsupportedFormatVersionException;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
-import org.primaresearch.io.UnsupportedFormatVersionException;
+import java.util.*;
 
 /**
  * Provides access to models and validators for different schema versions.
@@ -126,8 +121,8 @@ public abstract class XmlModelAndValidatorProvider {
 	 * Searches the given folder for schema files having the specified name and
 	 * adds them to the internal schema version map.
 	 * Note: The name of the folder containing a schema file is assumed to be the schema version.
-	 * 
-	 * @param schemaRootFolder The folder where to start the search 
+	 *
+	 * @param folderPath The folder where to start the search
 	 * @param schemaFilename Usually a file name with extension .xsd 
 	 * @param maxSearchDepth Specifies how deep to go into the folder hierarchy
 	 */

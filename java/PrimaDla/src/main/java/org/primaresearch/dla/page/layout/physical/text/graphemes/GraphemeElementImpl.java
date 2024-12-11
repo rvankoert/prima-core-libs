@@ -10,9 +10,9 @@ import org.primaresearch.ident.IdRegister;
 import org.primaresearch.ident.IdRegister.InvalidIdException;
 import org.primaresearch.shared.variable.IntegerValue;
 import org.primaresearch.shared.variable.StringValue;
+import org.primaresearch.shared.variable.Variable.WrongVariableTypeException;
 import org.primaresearch.shared.variable.VariableMap;
 import org.primaresearch.shared.variable.VariableValue;
-import org.primaresearch.shared.variable.Variable.WrongVariableTypeException;
 
 public abstract class GraphemeElementImpl implements GraphemeElement {
 
@@ -29,7 +29,6 @@ public abstract class GraphemeElementImpl implements GraphemeElement {
 	 * Constructor
 	 * @param idRegister
 	 * @param id
-	 * @param coords
 	 * @param attributes
 	 * @param parent
 	 * @param attrFactory
